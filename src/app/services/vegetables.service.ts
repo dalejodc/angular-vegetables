@@ -102,11 +102,18 @@ private vegetablesList:Vegetable[] =[
 	];
   constructor() { }
 
+  getVegetables(){
+  	return this.vegetablesList;
+  }
 
+  getSaludo(){
+  	return "Hola";
+  }
+  
 }
 
 
-interface Vegetable {
+export interface Vegetable {
 	name: string,
 	abstract: string,
 	img: string,

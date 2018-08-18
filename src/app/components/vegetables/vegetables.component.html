@@ -1,0 +1,42 @@
+
+<div class="container" id="vegetables">
+	<div class="row">
+		<div class="col s12 l3 m4" *ngFor="let x of vegetablesList; let i = index">
+			<div class="card animated fadeIn" >
+				<div class="card-image">
+					<img [src]="x.img" [alt]="x.name">
+				</div>
+				<div class="card-content">
+					<span class="card-title black-text">{{ x.name }}</span>
+					<p class="light black-text justify">{{ x.abstract }}</p>
+				</div>
+				<div class="card-action center">
+					<button (click)="verHeroe(i)" class="btn waves-effect waves-light" >See</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+#vegetables{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.btn {
+	padding-bottom: 10px;
+	height: 34px;
+	width: 90px ;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ce4a56;
+	text-align: center;
+	letter-spacing: .5px;
+	transition: .2s ease-out;
+	cursor: pointer;
+	text-transform: none !important;
+	font-size: 17px;
+}
+</style>
