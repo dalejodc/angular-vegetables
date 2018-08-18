@@ -1,0 +1,33 @@
+.tittle-container{
+	padding-left: 100px;
+	padding-top:  270px;
+}
+
+#sub-title{
+	padding-top:5px;
+	padding-bottom: 20px;
+}
+
+.btn {
+	padding-top: 10px;
+	height: 60px;
+	width: 160px ;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ce4a56;
+	text-align: center;
+	letter-spacing: .5px;
+	transition: .2s ease-out;
+	cursor: pointer;
+	text-transform: none !important;
+	font-size: 30px;
+}
+
+.full-width {
+	height: 100%;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-color: #231e32;
+}
