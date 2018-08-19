@@ -1,11 +1,13 @@
 import { Routes, RouterModule} from "@angular/router";
 import { HomeComponent } from "./components/home/home.component";
 import { VegetableDetailComponent } from './components/vegetable-detail/vegetable-detail.component';
+import { VegetablesListComponent } from './components/vegetables-list/vegetables-list.component';
 import { VegetablesSearchComponent } from './components/vegetables-search/vegetables-search.component';
 
 const APP_ROUTES: Routes = [
 	{path: 'home', component: HomeComponent}, 
 
+	{path: 'vegetables-list', component: VegetablesListComponent},
 	{path: 'vegetable/:id', component: VegetableDetailComponent},
 	{path: 'vegetables-search/:vegetable', component: VegetablesSearchComponent},  
 	

@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { VegetablesComponent } from './components/vegetables/vegetables.component';
 import { VegetableDetailComponent } from './components/vegetable-detail/vegetable-detail.component';
 import { VegetablesSearchComponent } from './components/vegetables-search/vegetables-search.component';
+import { VegetablesListComponent } from './components/vegetables-list/vegetables-list.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { VegetablesSearchComponent } from './components/vegetables-search/vegeta
     NavbarComponent,
     VegetablesComponent,
     VegetableDetailComponent,
-    VegetablesSearchComponent
+    VegetablesSearchComponent,
+    VegetablesListComponent
   ],
   imports: [
     BrowserModule,
