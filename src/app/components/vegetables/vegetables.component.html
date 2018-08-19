@@ -7,11 +7,11 @@
 					<img [src]="x.img" [alt]="x.name">
 				</div>
 				<div class="card-content">
-					<span class="card-title black-text">{{ x.name }}</span>
+					<span class="card-title black-text">{{i}}-{{ x.name }}</span>
 					<p class="light black-text justify">{{ x.abstract }}</p>
 				</div>
 				<div class="card-action center">
-					<button (click)="verHeroe(i)" class="btn waves-effect waves-light" >See</button>
+					<button (click)="seeVegetable(i)" class="btn waves-effect waves-light" >See</button>
 				</div>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 }
 
 .btn {
-	padding-bottom: 10px;
+	padding-bottom: 12px !important;
 	height: 34px;
 	width: 90px ;
 	border-radius: 30px;
@@ -41,6 +41,7 @@
 	transition: .2s ease-out;
 	cursor: pointer;
 	text-transform: none !important;
-	font-size: 17px;
+	/*font-size: 17px;*/
+	line-height: 35px;
 }
 </style>

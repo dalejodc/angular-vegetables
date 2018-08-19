@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { VegetablesComponent } from './components/vegetables/vegetables.component';
+import { VegetableDetailComponent } from './components/vegetable-detail/vegetable-detail.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { VegetablesComponent } from './components/vegetables/vegetables.componen
     HomeComponent,
     HeaderComponent,
     NavbarComponent,
-    VegetablesComponent
+    VegetablesComponent,
+    VegetableDetailComponent
   ],
   imports: [
     BrowserModule,

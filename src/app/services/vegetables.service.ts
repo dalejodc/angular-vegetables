@@ -106,8 +106,8 @@ private vegetablesList:Vegetable[] =[
   	return this.vegetablesList;
   }
 
-  getSaludo(){
-  	return "Hola";
+  getVegetable(id){
+  	return this.vegetablesList[id];
   }
   
 }

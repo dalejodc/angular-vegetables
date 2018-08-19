@@ -1,0 +1,19 @@
+<br>
+<br>
+<div class="container">
+	<a [routerLink]="['/home']" class="waves-effect"><i class="material-icons black-text">arrow_back</i></a>
+</div>
+<br>
+<div class="container animated fadeIn">	
+	<div class="card-panel">
+		<div class="row">
+			<div class="col m4 s12">
+				<img [src]="vegetable.img" [alt]="vegetable.nombre" width="100%">
+			</div>
+			<div class="col m8 s12">
+				<h1>{{vegetable.name}}</h1>
+				<p class="light justify">{{vegetable.description}}</p>
+			</div>
+		</div>
+	</div>
+</div>
