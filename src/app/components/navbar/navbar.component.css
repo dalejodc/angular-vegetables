@@ -1,0 +1,26 @@
+::placeholder { 
+    color: #bdbdbd;
+    opacity: 1; 
+    font-size: 26px;
+}
+
+.input-field input[type=search]:focus {
+	border-bottom: 0px solid red !important;
+	box-shadow: 0 0px 0 0 #000 !important;
+}
+
+#search-container{
+	padding-top: 50px;
+}
+#tittle{
+	padding-left: 15px;
+}
+
+nav .nav-wrapper {
+	background-color: #19132B;
+}
+
+nav {
+	height: 70px !important;
+	line-height: 70px !important;
+}

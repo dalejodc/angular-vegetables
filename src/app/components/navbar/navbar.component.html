@@ -16,17 +16,17 @@
 	</div>
 </nav>
 
-<style>
-	#tittle{
-		padding-left: 15px;
-	}
+<div class="container" id="search-container">
+	<nav>
+		<div class="nav-wrapper grey lighten-5">
+			<form>
+				<div class="input-field">
+					<input id="search" type="search" required placeholder="Let's find Vegetables..." (keyup.enter)="searchVegetable(searchVegetable.value)" #searchVegetable>
+					<label class="label-icon" for="search"><i class="material-icons grey-text">search</i></label>
+					<i class="material-icons">close</i>
+				</div>
+			</form>
+		</div>
+	</nav>
+</div>
 
-	nav .nav-wrapper {
-	    background-color: #19132B;
-	}
-
-	nav {
-	    height: 70px !important;
-	    line-height: 70px !important;
-	}
-</style>

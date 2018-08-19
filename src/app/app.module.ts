@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { VegetablesComponent } from './components/vegetables/vegetables.component';
 import { VegetableDetailComponent } from './components/vegetable-detail/vegetable-detail.component';
+import { VegetablesSearchComponent } from './components/vegetables-search/vegetables-search.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { VegetableDetailComponent } from './components/vegetable-detail/vegetabl
     HeaderComponent,
     NavbarComponent,
     VegetablesComponent,
-    VegetableDetailComponent
+    VegetableDetailComponent,
+    VegetablesSearchComponent
   ],
   imports: [
     BrowserModule,
