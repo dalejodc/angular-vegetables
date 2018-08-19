@@ -19,9 +19,9 @@
 <div class="container" id="search-container">
 	<nav>
 		<div class="nav-wrapper grey lighten-5">
-			<form>
+			<form onsubmit="return false">
 				<div class="input-field">
-					<input id="search" type="search" required placeholder="Let's find Vegetables..." (keyup.enter)="searchVegetable(searchVegetable.value)" #searchVegetable>
+					<input id="search" type="search" required placeholder="Let's find Vegetables..." (keyup.enter)="searchVegetable(inputSearchVegetable.value)" #inputSearchVegetable>
 					<label class="label-icon" for="search"><i class="material-icons grey-text">search</i></label>
 					<i class="material-icons">close</i>
 				</div>
