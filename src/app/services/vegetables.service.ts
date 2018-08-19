@@ -71,13 +71,6 @@ private vegetablesList:Vegetable[] =[
 		status: true
 	},
 	{
-		name: "Yellow capsicum",
-		abstract: "Consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
-		img: "assets/img/vegetable-21.png",
-		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae, ad et illum eos officia, provident alias veniam harum aliquam ipsa ducimus voluptate iure nobis odio! Velit asperiores saepe recusandae reiciendis beatae, facilis, at.",
-		status: true
-	},
-	{
 		name: "Chilli",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-22.png",
