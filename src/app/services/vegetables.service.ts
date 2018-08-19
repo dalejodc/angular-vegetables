@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 export class VegetablesService {
 
 
-private vegetablesList:Vegetable[] =[
+	private vegetablesList:Vegetable[] =[
 	{
 		name: "Corn",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
@@ -93,16 +93,35 @@ private vegetablesList:Vegetable[] =[
 	}
 	
 	];
-  constructor() { }
+	constructor() { }
 
-  getVegetables(){
-  	return this.vegetablesList;
-  }
+	getVegetables(){
+		return this.vegetablesList;
+	}
 
-  getVegetable(id){
-  	return this.vegetablesList[id];
-  }
-  
+	getVegetable(id){
+		return this.vegetablesList[id];
+	}
+
+	findVegetables(txt:string){
+		let listResult:any[] = []; 
+
+		txt = txt.toLowerCase(); 
+
+		for( let x of this.vegetablesList){ 
+			
+			let name = x.name.toLowerCase(); 
+
+			if(name.indexOf(txt) >=0){ 
+				listResult.push(x); 
+			}
+
+		}
+		console.log(listResult);
+		
+		return listResult;
+	}
+
 }
 
 
