@@ -3,11 +3,11 @@
 	<div class="row">
 		<div class="col s12 l2 m4" *ngFor="let x of vegetablesList; let i = index">
 			<div class="card animated fadeIn" >
-				<div class="card-image">
-					<img [src]="x.img" [alt]="x.name">
+				<div class="card-image item">
+					<a (click)="seeVegetable(i)"><img [src]="x.img" [alt]="x.name"></a>
 				</div>
 				<div class="card-content">
-					<span class="card-title black-text">{{i}}-{{ x.name }}</span>
+					<span class="card-title black-text">{{ x.name }}</span>
 					<p class="light black-text justify">{{ x.abstract }}</p>
 				</div>
 				<div class="card-action center">
@@ -19,6 +19,10 @@
 </div>
 
 <style>
+
+#top{
+	background-color: #231e32;
+}
 #vegetables{
 	padding-top: 50px;
 	padding-bottom: 30px;
@@ -43,5 +47,22 @@
 	text-transform: none !important;
 	/*font-size: 17px;*/
 	line-height: 35px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
 }
 </style>
