@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { VegetablesService, Vegetable } from '../../services/vegetables.service';
 
 @Component({
@@ -11,22 +11,34 @@ import { VegetablesService, Vegetable } from '../../services/vegetables.service'
 export class VegetableDetailComponent implements OnInit {
 
 	vegetable:Vegetable;
+	listRandom:any[] = [];
 
 	constructor(
 		private _activatedRoute: ActivatedRoute,
+		private _router: Router,
 		private _vegetableService: VegetablesService
 	) { }
 
 	ngOnInit() {
 		this.getVegetable();
+		this.getRandomVegetables();
 	}
 
 	getVegetable(){
 		this._activatedRoute.params.subscribe(params => {
-			// console.log(params['id']);
 			this.vegetable = this._vegetableService.getVegetable(params['id']);
-			// console.log(this.vegetable);
 		})
 	}
+
+	getRandomVegetables(){
+		this._activatedRoute.params.subscribe(params => {
+			this.listRandom = this._vegetableService.getRandomVegetables(params['id']);
+			console.log(this.listRandom);
+		})
+	}
+
+	seeVegetable(id){
+    this._router.navigate(['/vegetable', id]);
+  }
 
 }
