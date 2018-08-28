@@ -8,7 +8,7 @@ export class VegetablesService {
 
 	private vegetablesList:Vegetable[] =[
 	{
-		id: 1,
+		id: 0,
 		name: "Corn",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-03.png",
@@ -16,7 +16,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 2,
+		id: 1,
 		name: "Cucumber",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-07.png",
@@ -24,7 +24,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 3,
+		id: 2,
 		name: "Carrot",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-08.png",
@@ -32,7 +32,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 4,
+		id: 3,
 		name: "Eggplant",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-10.png",
@@ -40,7 +40,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 5,
+		id: 4,
 		name: "Red capsicum",
 		abstract: "Cconsectetur adipisicing elit. Magnam officiis ex molestias.",
 		img: "assets/img/vegetable-12.png",
@@ -48,7 +48,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 6,
+		id: 5,
 		name: "Lettuce",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-14.png",
@@ -56,7 +56,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 7,
+		id: 6,
 		name: "Mushroom",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-17.png",
@@ -64,7 +64,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 8,
+		id: 7,
 		name: "Tomato",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-18.png",
@@ -72,7 +72,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 9,
+		id: 8,
 		name: "Potato",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-19.png",
@@ -80,7 +80,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 10,
+		id: 9,
 		name: "Chilli",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-22.png",
@@ -88,7 +88,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 11,
+		id: 10,
 		name: "Garlic",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-23.png",
@@ -96,7 +96,7 @@ export class VegetablesService {
 		status: true
 	},
 	{
-		id: 12,
+		id: 11,
 		name: "Onion",
 		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
 		img: "assets/img/vegetable-25.png",
@@ -121,21 +121,48 @@ export class VegetablesService {
 
 	}
 
+	listRandom:Vegetable[] = [];
 	getRandomVegetables(idx:number){
-		let listRandom:any[] = [];
-		console.log(idx);
 
-		while(listRandom.length < 3){
-			let random = Math.floor(Math.random()*(12)+1);
+		while(this.listRandom.length < 3){
+			let random = Math.floor(Math.random()*(11)+0);
+			console.log("Vege fijo id",idx);
+			console.log("ran", random);
 
 			if(random != idx){
-				console.log(random);
-				listRandom.push(this.vegetablesList[random-1]);
+				let isIn: boolean;
+				isIn = this.isInTheArrayVegetable(this.listRandom, this.vegetablesList[random]);
+				console.log('is in?',isIn);
+				if(!isIn){
+					this.listRandom.push(this.vegetablesList[random]);
+					console.log("lo agregó", this.vegetablesList[random].id);
+				}else{
+					console.log("Do nothing");
+				}
 			}
 		}
+		return this.listRandom; 
+	}
+
+	isInTheArrayVegetable(listRandom, vegetable){
+		console.log(listRandom);	
+		let isIn:boolean = false;
 
 
-		return listRandom; 
+		for(var i=0; i< listRandom.length; i++){
+			console.log("iD random",vegetable.id, "ID Lista iterada",listRandom[i].id);
+			if(vegetable.id==listRandom[i].id){
+				console.log("Don´t add it");
+				return true;
+				break;
+			}else if(vegetable.id!=listRandom[i].id){
+				console.log("Add it");
+				isIn = false;
+			}
+
+			console.log('returnig:', isIn);
+			return isIn;
+		}
 	}
 
 	findVegetables(txt:string){
