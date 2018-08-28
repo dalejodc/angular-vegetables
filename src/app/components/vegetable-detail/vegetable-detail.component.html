@@ -18,7 +18,7 @@
 				<img [src]="vegetable.img" [alt]="vegetable.nombre" width="100%">
 			</div>
 			<div class="col m8 s12">
-				<h1>{{vegetable.id}}{{vegetable.name}}</h1>
+				<h1>{{vegetable.name}}</h1>
 				<p class="light justify">{{vegetable.description}}</p>
 			</div>
 		</div>
@@ -38,7 +38,7 @@
 					<a id="a-img" (click)="seeVegetable(x.id)"><img [src]="x.img" [alt]="x.name"></a>
 				</div>
 				<div class="card-content">
-					<span class="card-title black-text">{{x.id}}{{ x.name }}</span>
+					<span class="card-title black-text">{{ x.name }}</span>
 					<p class="light black-text justify">{{ x.abstract }}</p>
 				</div>
 			</div>

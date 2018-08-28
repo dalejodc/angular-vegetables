@@ -126,16 +126,11 @@ export class VegetablesService {
 
 		while(this.listRandom.length < 3){
 			let random = Math.floor(Math.random()*(11)+0);
-			console.log("Vege fijo id",idx);
-			console.log("ran", random);
 
 			if(random != idx){
-				let isIn: boolean;
-				isIn = this.isInTheArrayVegetable(this.listRandom, this.vegetablesList[random]);
-				console.log('is in?',isIn);
-				if(!isIn){
+				if(!this.isInTheArrayVegetable(this.listRandom, this.vegetablesList[random])){
 					this.listRandom.push(this.vegetablesList[random]);
-					console.log("lo agregó", this.vegetablesList[random].id);
+					// console.log("This was added:", this.vegetablesList[random].id,this.vegetablesList[random].name);
 				}else{
 					console.log("Do nothing");
 				}
@@ -145,24 +140,21 @@ export class VegetablesService {
 	}
 
 	isInTheArrayVegetable(listRandom, vegetable){
-		console.log(listRandom);	
 		let isIn:boolean = false;
 
-
 		for(var i=0; i< listRandom.length; i++){
-			console.log("iD random",vegetable.id, "ID Lista iterada",listRandom[i].id);
-			if(vegetable.id==listRandom[i].id){
-				console.log("Don´t add it");
-				return true;
-				break;
-			}else if(vegetable.id!=listRandom[i].id){
-				console.log("Add it");
-				isIn = false;
+			if(listRandom.length != 0){
+				if(vegetable.id==listRandom[i].id){
+					// console.log("Don´t add it");
+					return true;
+					break;
+				}else if(vegetable.id!=listRandom[i].id){
+					// console.log("Add it");
+					isIn = false;
+				}
 			}
-
-			console.log('returnig:', isIn);
-			return isIn;
 		}
+		return isIn;
 	}
 
 	findVegetables(txt:string){
