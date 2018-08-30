@@ -17,11 +17,14 @@ export class VegetableDetailComponent implements OnInit {
 		private _activatedRoute: ActivatedRoute,
 		private _router: Router,
 		private _vegetableService: VegetablesService
-	) { }
+	) { 
+		this.getVegetable();
+		console.log('Constructor');
+	}
 
 	ngOnInit() {
-		this.getVegetable();
 		this.getRandomVegetables();
+		console.log('OnInit');
 	}
 
 	getVegetable(){
@@ -33,12 +36,13 @@ export class VegetableDetailComponent implements OnInit {
 	getRandomVegetables(){
 		this._activatedRoute.params.subscribe(params => {
 			this.listRandom = this._vegetableService.getRandomVegetables(params['id']);
-			console.log(this.listRandom);
 		})
 	}
 
 	seeVegetable(id){
-    this._router.navigate(['/vegetable', id]);
+    	this._router.navigate(['/vegetable', id]);
+		this.listRandom= [];
+		this.getRandomVegetables();
   }
 
 }
