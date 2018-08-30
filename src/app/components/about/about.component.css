@@ -6,3 +6,22 @@
 #about{
 	font-size: 20px;
 }
+
+#code-banner1{
+	height: 500px;
+	background-color: #231e32;
+	padding-right: 30px;
+}
+
+#code-banner2{
+	height: 500px;
+	background-color: #19132B;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code-text{
+	font-size: 100px;
+	font-weight: 600;
+}
