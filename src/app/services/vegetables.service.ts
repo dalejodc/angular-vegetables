@@ -127,6 +127,7 @@ export class VegetablesService {
 		while(this.listRandom.length < 3){
 			let random = Math.floor(Math.random()*(11)+0);
 
+			// To not add the same element
 			if(random != idx){
 				if(!this.isInTheArrayVegetable(this.listRandom, this.vegetablesList[random])){
 					this.listRandom.push(this.vegetablesList[random]);
@@ -155,6 +156,10 @@ export class VegetablesService {
 			}
 		}
 		return isIn;
+	}
+
+	clearRandomList(){
+		this.listRandom = [];
 	}
 
 	findVegetables(txt:string){

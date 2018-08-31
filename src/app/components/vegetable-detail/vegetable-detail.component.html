@@ -35,7 +35,7 @@
 		<div class="col s12 l4 m4" *ngFor="let x of listRandom">
 			<div class="card animated fadeIn" *ngIf="x.status">
 				<div class="card-image pointer">
-					<a id="a-img" (click)="seeVegetable(x.id)"><img [src]="x.img" [alt]="x.name"></a>
+					<a id="a-img" (click)="seeVegetable(x.id)" (click)="getRandomVegetables(x.id)"><img [src]="x.img" [alt]="x.name"></a>
 				</div>
 				<div class="card-content">
 					<span class="card-title black-text">{{ x.name }}</span>
