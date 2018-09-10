@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class VegetablesService {
 
-
+	// Array of vegetables
 	private vegetablesList:Vegetable[] =[
 	{
 		id: 0,
@@ -107,10 +107,12 @@ export class VegetablesService {
 	];
 	constructor() { }
 
+	// This function return the array of vegetables
 	getVegetables(){
 		return this.vegetablesList;
 	}
 
+	// This function return an specific vegetble
 	getVegetable(id){
 
 		for(let x of this.vegetablesList){
@@ -121,6 +123,7 @@ export class VegetablesService {
 
 	}
 
+	// This function return an aleat array of vegetables. The array size is 3 vegetables 
 	listRandom:Vegetable[] = [];
 	getRandomVegetables(idx:number){
 
@@ -140,6 +143,9 @@ export class VegetablesService {
 		return this.listRandom; 
 	}
 
+	/* This function check if the new vegetable that we are trying tu push in the array is already in the array.
+	Returns true if the vegetable is in the array. Returns false if the vegetable isn´t in the array*/
+	
 	isInTheArrayVegetable(listRandom, vegetable){
 		let isIn:boolean = false;
 
@@ -158,10 +164,14 @@ export class VegetablesService {
 		return isIn;
 	}
 
+	// This method clean the array of vegetables
 	clearRandomList(){
 		this.listRandom = [];
 	}
 
+	/* This method find a vegetable in the array. It check the parameter and compare it with the name of the vegetables in the array
+	And returns the the coincidences*/
+	
 	findVegetables(txt:string){
 		let listResult:any[] = []; 
 
@@ -183,7 +193,7 @@ export class VegetablesService {
 
 }
 
-
+// Vegetable Interface 
 export interface Vegetable {
 	id: number,
 	name: string,
