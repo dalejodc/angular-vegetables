@@ -1,3 +1,7 @@
+/* This component is used to show the information of a specific vegetable.
+Additionally shows an array with an aleatory vegetables
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { VegetablesService, Vegetable } from '../../services/vegetables.service';

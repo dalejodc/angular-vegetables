@@ -1,3 +1,4 @@
+/*This component is used to show the info of the application*/
 import { Component, OnInit } from '@angular/core';
 
 @Component({

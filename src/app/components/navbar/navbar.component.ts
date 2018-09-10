@@ -1,3 +1,4 @@
+//This component is used to show the navbar, , and lets find a vegetable
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 

@@ -1,3 +1,6 @@
+/*This component is the principal component. 
+It contains the children: app-header, app-navbar, app-vegetables*/ 
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

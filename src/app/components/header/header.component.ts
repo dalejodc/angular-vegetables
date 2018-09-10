@@ -1,3 +1,4 @@
+/*This component is the header of the application*/
 import { Component, OnInit } from '@angular/core';
 
 @Component({

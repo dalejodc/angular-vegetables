@@ -1,3 +1,4 @@
+// This component shows all the vegetables
 import { Component, OnInit } from '@angular/core';
 
 @Component({
