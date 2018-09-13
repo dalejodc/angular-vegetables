@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
+import { FormsModule } from '@angular/forms';
 
 import { APP_ROUTING } from './app.routes';
 
@@ -30,6 +31,7 @@ import { AboutComponent } from './components/about/about.component';
   imports: [
     BrowserModule,
     MaterializeModule,
+    FormsModule,
     APP_ROUTING
   ],
   providers: [],
