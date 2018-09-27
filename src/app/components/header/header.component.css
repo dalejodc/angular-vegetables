@@ -3,14 +3,31 @@
 	letter-spacing: 4px;
 }
 
+#tittle-mobile{
+	font-style: italic;
+	letter-spacing: 4px;
+}
+
+
+#sub-title{
+	padding-top:5px;
+	padding-bottom: 20px;
+}
+
+#sub-title-mobile{
+	padding-top:5px;
+	padding-bottom: 20px;
+}
+
 .tittle-container{
 	padding-left: 100px;
 	padding-top:  270px;
 }
 
-#sub-title{
-	padding-top:5px;
-	padding-bottom: 20px;
+.tittle-container-mobile{
+	padding-left: 20px;
+	margin-top:  170px;
+	width: 90%
 }
 
 .btn {
