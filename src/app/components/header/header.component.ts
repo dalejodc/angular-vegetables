@@ -13,4 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollDown(){
+  	document.getElementById('vegetables').scrollIntoView({behavior: 'smooth'});
+  }
+
 }
