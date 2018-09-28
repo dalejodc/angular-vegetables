@@ -31,8 +31,4 @@ export class VegetablesComponent implements OnInit {
     this._router.navigate(['/vegetable', id]);
   }
 
-  scrollTop(){
-    document.getElementById('header').scrollIntoView({behavior: 'smooth'});
-  }
-
 }

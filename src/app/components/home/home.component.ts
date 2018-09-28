@@ -15,4 +15,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollTop(){
+    document.getElementById('header').scrollIntoView({behavior: 'smooth'});
+  }
+
 }
