@@ -25,3 +25,14 @@
 	font-size: 100px;
 	font-weight: 600;
 }
+
+.go-top-icon{
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.go-top-icon:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+}

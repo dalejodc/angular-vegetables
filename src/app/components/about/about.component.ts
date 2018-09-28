@@ -15,4 +15,8 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollTop(){
+    document.getElementById('detail').scrollIntoView({behavior: 'smooth'});
+  }
+
 }
