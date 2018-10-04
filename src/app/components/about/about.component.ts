@@ -1,4 +1,4 @@
-/*This component is used to show the info of the application*/
+/*This component is used to show the info of the application, all the onfo ibout vegetables*/
 import { Component, OnInit } from '@angular/core';
 
 @Component({
