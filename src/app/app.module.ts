@@ -15,6 +15,7 @@ import { VegetableDetailComponent } from './components/vegetable-detail/vegetabl
 import { VegetablesSearchComponent } from './components/vegetables-search/vegetables-search.component';
 import { VegetablesListComponent } from './components/vegetables-list/vegetables-list.component';
 import { AboutComponent } from './components/about/about.component';
+import { VegetableCardComponent } from './components/vegetable-card/vegetable-card.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { AboutComponent } from './components/about/about.component';
     VegetableDetailComponent,
     VegetablesSearchComponent,
     VegetablesListComponent,
-    AboutComponent
+    AboutComponent,
+    VegetableCardComponent
   ],
   imports: [
     BrowserModule,
