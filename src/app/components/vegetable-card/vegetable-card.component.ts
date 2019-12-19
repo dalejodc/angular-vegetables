@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-vegetable-card',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vegetable-card.component.css']
 })
 export class VegetableCardComponent implements OnInit {
+
+  @Input() name;
+  @Input() abstract;
+  @Input() image;
 
   constructor() { }
 
