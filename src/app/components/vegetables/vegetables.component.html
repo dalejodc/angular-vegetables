@@ -2,20 +2,10 @@
 	<div class="row">
 		<div class="col s12 l2 m4" *ngFor="let x of vegetablesList">
 			<app-vegetable-card
-				[image]="x.image"
+				[image]="x.img"
 				[name]="x.name"
 				[abstract]="x.abstract"
 			></app-vegetable-card>
-				
-			<div class="card animated fadeIn medium" *ngIf="x.status">
-				<div class="card-image item">
-					<a id="a-img" (click)="seeVegetable(x.id)"><img [src]="x.img" [alt]="x.name"></a>
-				</div>
-				<div class="card-content pointer" (click)="seeVegetable(x.id)">
-					<span class="card-title black-text">{{ x.name }}</span>
-					<p class="light black-text justify">{{ x.abstract }}</p>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
