@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { VegetablesService, Vegetable } from '../../services/vegetables.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vegetable-card',
@@ -11,10 +13,16 @@ export class VegetableCardComponent implements OnInit {
   @Input() abstract;
   @Input() image;
 
-  constructor() { }
+  constructor(
+    private _vegetableService:VegetablesService,
+    private _router:Router
+  ) { }
 
   ngOnInit() {
     console.log(this.image);
   }
 
+  seeVegetable(id){
+    this._router.navigate(['/vegetable', id]);
+  }
 }
