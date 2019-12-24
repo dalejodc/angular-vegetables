@@ -1,9 +1,9 @@
 <div class="card animated fadeIn medium">
   <div class="card-image item">
-    <a id="a-img" (click)="seeVegetable(x.id)"><img [src]="image" [alt]="name"></a>
+    <a id="a-img" (click)="seeVegetable(vegetable.id)"><img [src]="vegetable.img" [alt]="vegetable.name"></a>
   </div>
   <div class="card-content pointer" (click)="seeVegetable(id)">
-    <span class="card-title black-text">{{ name }}</span>
-    <p class="light black-text justify">{{ abstract }}</p>
+    <span class="card-title black-text">{{ vegetable.name }}</span>
+    <p class="light black-text justify">{{ vegetable.abstract }}</p>
   </div>
 </div>
