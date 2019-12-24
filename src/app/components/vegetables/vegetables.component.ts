@@ -26,9 +26,4 @@ export class VegetablesComponent implements OnInit {
   	this.vegetablesList= this._vegetableService.getVegetables();
   	// console.log(this.vegetablesList);
   }
-
-  seeVegetable(id){
-    this._router.navigate(['/vegetable', id]);
-  }
-
 }
