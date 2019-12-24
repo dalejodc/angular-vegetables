@@ -9,9 +9,7 @@ import { Router } from '@angular/router';
 })
 export class VegetableCardComponent implements OnInit {
 
-  @Input() name;
-  @Input() abstract;
-  @Input() image;
+  @Input() vegetable : Vegetable;
 
   constructor(
     private _vegetableService:VegetablesService,
@@ -19,7 +17,7 @@ export class VegetableCardComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.image);
+    console.log(this.vegetable);
   }
 
   seeVegetable(id){
