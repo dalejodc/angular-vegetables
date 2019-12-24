@@ -1,10 +1,8 @@
 <div class="container" id="vegetables">
 	<div class="row">
-		<div class="col s12 l2 m4" *ngFor="let x of vegetablesList">
+		<div class="col s12 l2 m4" *ngFor="let vegetable of vegetablesList">
 			<app-vegetable-card
-				[image]="x.img"
-				[name]="x.name"
-				[abstract]="x.abstract"
+				[vegetable]="vegetable"
 			></app-vegetable-card>
 		</div>
 	</div>
