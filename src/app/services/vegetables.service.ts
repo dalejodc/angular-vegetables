@@ -10,7 +10,7 @@ export class VegetablesService {
 	{
 		id: 0,
 		name: "Corn",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
+		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
 		img: "assets/img/vegetable-03.png",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae, ad et illum eos officia, provident alias veniam harum aliquam ipsa ducimus voluptate iure nobis odio! Velit asperiores saepe recusandae reiciendis beatae, facilis, at.",
 		status: true
@@ -26,7 +26,7 @@ export class VegetablesService {
 	{
 		id: 2,
 		name: "Carrot",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
+		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
 		img: "assets/img/vegetable-08.png",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae, ad et illum eos officia, provident alias veniam harum aliquam ipsa ducimus voluptate iure nobis odio! Velit asperiores saepe recusandae reiciendis beatae, facilis, at.",
 		status: true
@@ -34,7 +34,7 @@ export class VegetablesService {
 	{
 		id: 3,
 		name: "Eggplant",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
+		abstract: "Lorem ipsum dolor sit amet, consectetur.",
 		img: "assets/img/vegetable-10.png",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae, ad et illum eos officia, provident alias veniam harum aliquam ipsa ducimus voluptate iure nobis odio! Velit asperiores saepe recusandae reiciendis beatae, facilis, at.",
 		status: true
@@ -58,7 +58,7 @@ export class VegetablesService {
 	{
 		id: 6,
 		name: "Mushroom",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae.",
+		abstract: "Lorem ipsum dolor sit amet.",
 		img: "assets/img/vegetable-17.png",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis ex molestias perferendis rem quasi vitae, ad et illum eos officia, provident alias veniam harum aliquam ipsa ducimus voluptate iure nobis odio! Velit asperiores saepe recusandae reiciendis beatae, facilis, at.",
 		status: true
