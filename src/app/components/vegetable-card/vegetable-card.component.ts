@@ -20,7 +20,11 @@ export class VegetableCardComponent implements OnInit {
     console.log(this.vegetable);
   }
 
-  seeVegetable(id){
+  seeVegetable(id) {
     this._router.navigate(['/vegetable', id]);
+  }
+
+  truncateText(string) {
+    return string.length >  70 ? `${string.substring(0, 70)}...` : string;
   }
 }
