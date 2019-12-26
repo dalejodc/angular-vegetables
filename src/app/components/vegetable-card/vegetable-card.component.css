@@ -21,3 +21,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.card-content {
+    padding: 18px;
+}
