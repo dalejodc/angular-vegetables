@@ -4,6 +4,6 @@
   </div>
   <div class="card-content pointer" (click)="seeVegetable(id)">
     <span class="card-title black-text">{{ vegetable.name }}</span>
-    <p class="card-text light black-text justify">{{ vegetable.abstract }}</p>
+    <p class="light black-text justify">{{ truncateText(vegetable.abstract) }}</p>
   </div>
 </div>
