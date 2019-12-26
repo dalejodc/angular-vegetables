@@ -9,6 +9,11 @@
 	box-shadow: 0 0px 0 0 #000 !important;
 }
 
+.input-field input[type=search] + label {
+    left: 1rem;
+    top: -10px;
+}
+
 #search-container{
 	padding-top: 50px;
 }
