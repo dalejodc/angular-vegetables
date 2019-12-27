@@ -17,7 +17,6 @@ export class VegetableCardComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.vegetable);
   }
 
   seeVegetable(id) {

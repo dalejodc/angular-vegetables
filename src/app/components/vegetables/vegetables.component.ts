@@ -24,6 +24,5 @@ export class VegetablesComponent implements OnInit {
 
   getVegetables(){
   	this.vegetablesList= this._vegetableService.getVegetables();
-  	// console.log(this.vegetablesList);
   }
 }
