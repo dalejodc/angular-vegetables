@@ -2,7 +2,7 @@
   <div class="card-image pointer">
     <a id="a-img" (click)="seeVegetable(vegetable.id)"><img [src]="vegetable.img" [alt]="vegetable.name"></a>
   </div>
-  <div class="card-content pointer" (click)="seeVegetable(id)">
+  <div class="card-content pointer" (click)="seeVegetable(vegetable.id)">
     <span class="card-title">{{ vegetable.name }}</span>
     <p class="light justify">{{ truncateText(vegetable.abstract) }}</p>
   </div>
