@@ -13,6 +13,10 @@
     padding-bottom: 30px;
 }
 
+.suggestions {
+	margin-top: 45px;
+}
+
 .card .card-title {
     font-size: 24px;
     font-weight: 700;
