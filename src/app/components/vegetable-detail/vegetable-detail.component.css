@@ -1,6 +1,16 @@
-#detail {
+.vegetable-detail {
 	background-color: #231e32;
 	border-bottom: #19132B 22px solid !important;
+}
+
+.header h1 {
+	margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 30px;
+}
+
+.header h4 {
+    padding-bottom: 30px;
 }
 
 .card .card-title {
