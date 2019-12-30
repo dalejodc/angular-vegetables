@@ -2,3 +2,9 @@
 	background-color: #231e32;
 	border-bottom: #19132B 22px solid !important;
 }
+
+.card .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #505050;
+}

@@ -38,17 +38,10 @@
 					<a id="a-img" (click)="seeVegetable(x.id)" (click)="getRandomVegetables(x.id)"><img [src]="x.img" [alt]="x.name"></a>
 				</div>
 				<div class="card-content">
-					<span class="card-title black-text">{{ x.name }}</span>
+					<span class="card-title">{{ x.name }}</span>
 					<p class="light black-text justify">{{ x.abstract }}</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<style>
-	.pointer{
-		cursor: pointer;
-	}
-</style>
-
