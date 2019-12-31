@@ -13,6 +13,10 @@
     padding-bottom: 30px;
 }
 
+.content {
+	padding: 35px 0px 35px 0px;
+}
+
 .suggestions {
 	margin-top: 45px;
 }
