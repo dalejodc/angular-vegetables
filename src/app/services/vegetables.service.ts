@@ -134,7 +134,6 @@ export class VegetablesService {
 			if(random != idx){
 				if(!this.isInTheArrayVegetable(this.listRandom, this.vegetablesList[random])){
 					this.listRandom.push(this.vegetablesList[random]);
-					// console.log("This was added:", this.vegetablesList[random].id,this.vegetablesList[random].name);
 				}else{
 					console.log("Do nothing");
 				}
@@ -152,11 +151,9 @@ export class VegetablesService {
 		for(var i=0; i< listRandom.length; i++){
 			if(listRandom.length != 0){
 				if(vegetable.id==listRandom[i].id){
-					// console.log("Don´t add it");
 					return true;
 					break;
 				}else if(vegetable.id!=listRandom[i].id){
-					// console.log("Add it");
 					isIn = false;
 				}
 			}
@@ -186,7 +183,6 @@ export class VegetablesService {
 			}
 
 		}
-		console.log(listResult);
 		
 		return listResult;
 	}
