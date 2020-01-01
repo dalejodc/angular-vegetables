@@ -23,7 +23,6 @@ export class VegetableDetailComponent implements OnInit {
 		private _router: Router,
 		private _vegetableService: VegetablesService
 	) { 
-		console.log('Constructor');
 	}
 
 	ngOnInit() {

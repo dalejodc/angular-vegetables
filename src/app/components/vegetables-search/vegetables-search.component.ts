@@ -25,11 +25,8 @@ export class VegetablesSearchComponent implements OnInit {
 
 	getVegetables(){
 		this._activatedRoute.params.subscribe(params=>{
-  		// console.log(params);
   		this.txt = params['vegetable'];
   		this.listVegetablesFound =  this._vegetableService.findVegetables(params['vegetable']);
-
-  		console.log(this.listVegetablesFound);
   	});
 	}
 
