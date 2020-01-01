@@ -1,15 +1,14 @@
 #a-img {
 	cursor: pointer;
 }
+
 #top{
 	background-color: #231e32;
 }
-#vegetables{
+
+.vegetables{
 	padding-top: 50px;
 	padding-bottom: 30px;
-}
-
-.container, #vegetables{
 	width: 90%;
 }
 
@@ -26,7 +25,6 @@
 	transition: .2s ease-out;
 	cursor: pointer;
 	text-transform: none !important;
-	/*font-size: 17px;*/
 	line-height: 35px;
 }
 
