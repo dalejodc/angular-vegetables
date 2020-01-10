@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
-import { APP_ROUTING } from './app.routes';
+import { appRoutes } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -30,9 +31,9 @@ import { AboutComponent } from './components/about/about.component';
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(appRoutes),
     MaterializeModule,
-    FormsModule,
-    APP_ROUTING
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
